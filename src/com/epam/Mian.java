@@ -21,7 +21,7 @@ public class Mian {
         String strResult = "";
         char[] strArray = strSource.toCharArray();
         for (int i = strArray.length - 1; i >= 0; i--) {
-            strResult += strArray[i];
+            strResult += strArray[i];                   //wow so many unsed objects will be created. Save your memory! Use StringBuilder
             
         }
         return strResult;
